@@ -1,9 +1,10 @@
-node {
-   // Mark the code checkout 'stage'....
-   stage 'Checkout'
+#!groovy
 
-   // Get some code from a GitHub repository
-   git url: 'https://github.com/jglick/simple-maven-project-with-tests.git'
+   stage 'Checkout'
+   node {
+   // Get code from a GitHub repository
+   git url: 'https://github.com/Deepika-nagula/chef-repo.git'
+   }
 
    // Get the maven tool.
    // ** NOTE: This 'M3' maven tool must be configured
